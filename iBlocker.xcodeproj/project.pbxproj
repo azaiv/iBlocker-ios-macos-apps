@@ -7,19 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		556344942B036D250070CD3E /* iBlocker_ios_macos_appsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556344932B036D250070CD3E /* iBlocker_ios_macos_appsApp.swift */; };
-		556344962B036D250070CD3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556344952B036D250070CD3E /* ContentView.swift */; };
+		550B9D162B0377440055E9A5 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D152B0377440055E9A5 /* CustomText.swift */; };
+		550B9D182B037AE50055E9A5 /* ChooseBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D172B037AE50055E9A5 /* ChooseBlockView.swift */; };
+		550B9D1B2B0381DC0055E9A5 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D1A2B0381DC0055E9A5 /* OnboardingViewModel.swift */; };
+		550B9D1D2B0387D60055E9A5 /* ToggleBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D1C2B0387D60055E9A5 /* ToggleBlockView.swift */; };
+		550B9D1F2B038AF10055E9A5 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D1E2B038AF10055E9A5 /* ExperienceView.swift */; };
+		550B9D252B0390010055E9A5 /* OnboardingChooseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D242B0390010055E9A5 /* OnboardingChooseButton.swift */; };
+		550B9D2A2B039E760055E9A5 /* ChooseBlockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D292B039E760055E9A5 /* ChooseBlockType.swift */; };
+		550B9D322B03B7A90055E9A5 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D312B03B7A90055E9A5 /* CommentsView.swift */; };
+		550B9D342B03BA590055E9A5 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D332B03BA590055E9A5 /* CommentView.swift */; };
+		556344942B036D250070CD3E /* iBlockerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556344932B036D250070CD3E /* iBlockerApp.swift */; };
+		556344962B036D250070CD3E /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556344952B036D250070CD3E /* GetStartedView.swift */; };
 		556344982B036D260070CD3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556344972B036D260070CD3E /* Assets.xcassets */; };
-		5563449C2B036D260070CD3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5563449B2B036D260070CD3E /* Preview Assets.xcassets */; };
+		556344AE2B036F970070CD3E /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556344AD2B036F970070CD3E /* Texts.swift */; };
+		556344B22B0370970070CD3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556344B42B0370970070CD3E /* Localizable.strings */; };
+		556344B82B0372500070CD3E /* OnboardingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556344B72B0372500070CD3E /* OnboardingButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		556344902B036D250070CD3E /* iBlocker-ios-macos-apps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iBlocker-ios-macos-apps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		556344932B036D250070CD3E /* iBlocker_ios_macos_appsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBlocker_ios_macos_appsApp.swift; sourceTree = "<group>"; };
-		556344952B036D250070CD3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		550B9D152B0377440055E9A5 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		550B9D172B037AE50055E9A5 /* ChooseBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBlockView.swift; sourceTree = "<group>"; };
+		550B9D1A2B0381DC0055E9A5 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		550B9D1C2B0387D60055E9A5 /* ToggleBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleBlockView.swift; sourceTree = "<group>"; };
+		550B9D1E2B038AF10055E9A5 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
+		550B9D242B0390010055E9A5 /* OnboardingChooseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingChooseButton.swift; sourceTree = "<group>"; };
+		550B9D292B039E760055E9A5 /* ChooseBlockType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBlockType.swift; sourceTree = "<group>"; };
+		550B9D312B03B7A90055E9A5 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		550B9D332B03BA590055E9A5 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		556344902B036D250070CD3E /* iBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		556344932B036D250070CD3E /* iBlockerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBlockerApp.swift; sourceTree = "<group>"; };
+		556344952B036D250070CD3E /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
 		556344972B036D260070CD3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		556344992B036D260070CD3E /* iBlocker_ios_macos_apps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iBlocker_ios_macos_apps.entitlements; sourceTree = "<group>"; };
-		5563449B2B036D260070CD3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		556344992B036D260070CD3E /* iBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iBlocker.entitlements; sourceTree = "<group>"; };
+		556344AD2B036F970070CD3E /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		556344B32B0370970070CD3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		556344B52B0370990070CD3E /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		556344B72B0372500070CD3E /* OnboardingButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,10 +56,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550B9D132B03771C0055E9A5 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				556344B72B0372500070CD3E /* OnboardingButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		550B9D142B0377280055E9A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				550B9D152B0377440055E9A5 /* CustomText.swift */,
+				550B9D242B0390010055E9A5 /* OnboardingChooseButton.swift */,
+				550B9D1C2B0387D60055E9A5 /* ToggleBlockView.swift */,
+				550B9D1E2B038AF10055E9A5 /* ExperienceView.swift */,
+				550B9D332B03BA590055E9A5 /* CommentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		550B9D192B0381C80055E9A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				550B9D1A2B0381DC0055E9A5 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		550B9D262B0396A80055E9A5 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				550B9D272B0396C30055E9A5 /* Onboarding */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		550B9D272B0396C30055E9A5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				550B9D282B0396EE0055E9A5 /* Model */,
+				556344A42B036D6B0070CD3E /* View */,
+				550B9D192B0381C80055E9A5 /* ViewModel */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		550B9D282B0396EE0055E9A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				550B9D292B039E760055E9A5 /* ChooseBlockType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		556344872B036D250070CD3E = {
 			isa = PBXGroup;
 			children = (
-				556344922B036D250070CD3E /* iBlocker-ios-macos-apps */,
+				556344922B036D250070CD3E /* iOS & macOS Apps */,
 				556344912B036D250070CD3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,37 +121,82 @@
 		556344912B036D250070CD3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				556344902B036D250070CD3E /* iBlocker-ios-macos-apps.app */,
+				556344902B036D250070CD3E /* iBlocker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		556344922B036D250070CD3E /* iBlocker-ios-macos-apps */ = {
+		556344922B036D250070CD3E /* iOS & macOS Apps */ = {
 			isa = PBXGroup;
 			children = (
-				556344932B036D250070CD3E /* iBlocker_ios_macos_appsApp.swift */,
-				556344952B036D250070CD3E /* ContentView.swift */,
-				556344972B036D260070CD3E /* Assets.xcassets */,
-				556344992B036D260070CD3E /* iBlocker_ios_macos_apps.entitlements */,
-				5563449A2B036D260070CD3E /* Preview Content */,
+				556344A22B036D470070CD3E /* App */,
+				550B9D262B0396A80055E9A5 /* Module */,
+				556344A72B036F3B0070CD3E /* Localization */,
+				556344A62B036F040070CD3E /* Data */,
+				556344A32B036D4F0070CD3E /* Resources */,
 			);
-			path = "iBlocker-ios-macos-apps";
+			path = "iOS & macOS Apps";
 			sourceTree = "<group>";
 		};
-		5563449A2B036D260070CD3E /* Preview Content */ = {
+		556344A22B036D470070CD3E /* App */ = {
 			isa = PBXGroup;
 			children = (
-				5563449B2B036D260070CD3E /* Preview Assets.xcassets */,
+				556344932B036D250070CD3E /* iBlockerApp.swift */,
 			);
-			path = "Preview Content";
+			path = App;
+			sourceTree = "<group>";
+		};
+		556344A32B036D4F0070CD3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				556344972B036D260070CD3E /* Assets.xcassets */,
+				556344992B036D260070CD3E /* iBlocker.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		556344A42B036D6B0070CD3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				556344B62B03723D0070CD3E /* Helpers */,
+				556344952B036D250070CD3E /* GetStartedView.swift */,
+				550B9D172B037AE50055E9A5 /* ChooseBlockView.swift */,
+				550B9D312B03B7A90055E9A5 /* CommentsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556344A62B036F040070CD3E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				556344AD2B036F970070CD3E /* Texts.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		556344A72B036F3B0070CD3E /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				556344B42B0370970070CD3E /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		556344B62B03723D0070CD3E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				550B9D142B0377280055E9A5 /* View */,
+				550B9D132B03771C0055E9A5 /* Styles */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5563448F2B036D250070CD3E /* iBlocker-ios-macos-apps */ = {
+		5563448F2B036D250070CD3E /* iBlocker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5563449F2B036D260070CD3E /* Build configuration list for PBXNativeTarget "iBlocker-ios-macos-apps" */;
+			buildConfigurationList = 5563449F2B036D260070CD3E /* Build configuration list for PBXNativeTarget "iBlocker" */;
 			buildPhases = (
 				5563448C2B036D250070CD3E /* Sources */,
 				5563448D2B036D250070CD3E /* Frameworks */,
@@ -84,9 +206,9 @@
 			);
 			dependencies = (
 			);
-			name = "iBlocker-ios-macos-apps";
+			name = iBlocker;
 			productName = "iBlocker-ios-macos-apps";
-			productReference = 556344902B036D250070CD3E /* iBlocker-ios-macos-apps.app */;
+			productReference = 556344902B036D250070CD3E /* iBlocker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,20 +226,21 @@
 					};
 				};
 			};
-			buildConfigurationList = 5563448B2B036D250070CD3E /* Build configuration list for PBXProject "iBlocker-ios-macos-apps" */;
+			buildConfigurationList = 5563448B2B036D250070CD3E /* Build configuration list for PBXProject "iBlocker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"en-IN",
 			);
 			mainGroup = 556344872B036D250070CD3E;
 			productRefGroup = 556344912B036D250070CD3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5563448F2B036D250070CD3E /* iBlocker-ios-macos-apps */,
+				5563448F2B036D250070CD3E /* iBlocker */,
 			);
 		};
 /* End PBXProject section */
@@ -127,8 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5563449C2B036D260070CD3E /* Preview Assets.xcassets in Resources */,
 				556344982B036D260070CD3E /* Assets.xcassets in Resources */,
+				556344B22B0370970070CD3E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,12 +262,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556344962B036D250070CD3E /* ContentView.swift in Sources */,
-				556344942B036D250070CD3E /* iBlocker_ios_macos_appsApp.swift in Sources */,
+				550B9D1D2B0387D60055E9A5 /* ToggleBlockView.swift in Sources */,
+				550B9D342B03BA590055E9A5 /* CommentView.swift in Sources */,
+				556344AE2B036F970070CD3E /* Texts.swift in Sources */,
+				550B9D322B03B7A90055E9A5 /* CommentsView.swift in Sources */,
+				556344962B036D250070CD3E /* GetStartedView.swift in Sources */,
+				550B9D1F2B038AF10055E9A5 /* ExperienceView.swift in Sources */,
+				556344B82B0372500070CD3E /* OnboardingButtonStyle.swift in Sources */,
+				550B9D182B037AE50055E9A5 /* ChooseBlockView.swift in Sources */,
+				556344942B036D250070CD3E /* iBlockerApp.swift in Sources */,
+				550B9D1B2B0381DC0055E9A5 /* OnboardingViewModel.swift in Sources */,
+				550B9D162B0377440055E9A5 /* CustomText.swift in Sources */,
+				550B9D2A2B039E760055E9A5 /* ChooseBlockType.swift in Sources */,
+				550B9D252B0390010055E9A5 /* OnboardingChooseButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		556344B42B0370970070CD3E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				556344B32B0370970070CD3E /* en */,
+				556344B52B0370990070CD3E /* en-IN */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5563449D2B036D260070CD3E /* Debug */ = {
@@ -152,6 +298,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -213,6 +360,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -266,10 +414,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "iBlocker-ios-macos-apps/iBlocker_ios_macos_apps.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "iOS & macOS Apps/Resources/iBlocker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iBlocker-ios-macos-apps/Preview Content\"";
 				DEVELOPMENT_TEAM = JRA8SJKSWZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -304,10 +451,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "iBlocker-ios-macos-apps/iBlocker_ios_macos_apps.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "iOS & macOS Apps/Resources/iBlocker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iBlocker-ios-macos-apps/Preview Content\"";
 				DEVELOPMENT_TEAM = JRA8SJKSWZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -340,7 +486,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5563448B2B036D250070CD3E /* Build configuration list for PBXProject "iBlocker-ios-macos-apps" */ = {
+		5563448B2B036D250070CD3E /* Build configuration list for PBXProject "iBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5563449D2B036D260070CD3E /* Debug */,
@@ -349,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5563449F2B036D260070CD3E /* Build configuration list for PBXNativeTarget "iBlocker-ios-macos-apps" */ = {
+		5563449F2B036D260070CD3E /* Build configuration list for PBXNativeTarget "iBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556344A02B036D260070CD3E /* Debug */,
