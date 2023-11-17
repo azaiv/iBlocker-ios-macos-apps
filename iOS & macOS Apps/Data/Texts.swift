@@ -68,4 +68,32 @@ enum Texts {
     static var continue_button: String {
         return NSLocalizedString("continue", comment: "")
     }
+    
+    static var comments_view_title: String {
+        return NSLocalizedString("comments view title", comment: "")
+    }
+    
+    static var comments_view_description: String {
+        return NSLocalizedString("comments view description", comment: "")
+    }
+    
+    static var steps_view_title: String {
+        return NSLocalizedString("steps view title", comment: "")
+    }
+    
+    static var notifications_view_title: String {
+        return NSLocalizedString("notifications view title", comment: "")
+    }
+    
+    static var notifications_view_description: String {
+        return NSLocalizedString("notifications view description", comment: "")
+    }
+    
+    static var allow_notifications: String {
+        return NSLocalizedString("allow notification", comment: "")
+    }
+    
+    static var notification_continue: String {
+        return NSLocalizedString("notification continue", comment: "")
+    }
 }

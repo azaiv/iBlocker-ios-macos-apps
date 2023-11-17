@@ -1,74 +1,72 @@
 import SwiftUI
 
-enum SelectionType: CaseIterable {
-    case toggle
-    case expirience
-}
-
 struct ChooseBlockView: View {
     
     @EnvironmentObject var onboardingViewModel: OnboardingViewModel
     
-    @State private var progress = 0.5
-    @State private var total = 1.0
-    @State private var selection: SelectionType = .toggle
-    
+    @State private var isPresented = false
+
     var body: some View {
-        NavigationView {
+            BaseModalView(content: {
+                setupView()
+            }, action: {
+                isPresented = true
+            }, disabled: .constant(false))
+            .navigationDestination(isPresented: $isPresented){
+                ExpierenceView()
+            }
+    }
+    
+    @ViewBuilder
+    private func setupView() -> some View {
+        VStack {
+            BaseText(text: Texts.choose_block_title_first,
+                     font: .title,
+                     fontWeight: .bold,
+                     alignment: .center)
             VStack {
-                ProgressView(value: progress,
-                             total: total)
-                .padding(.horizontal, 30)
-                .padding(.top, 10)
-                CustomText(text: progress == 0.5 ? Texts.choose_block_title_first : Texts.choose_block_title_second,
-                           font: .title,
-                           fontWeight: .bold,
-                           alignment: .center)
-                .padding(.vertical, 30)
-                TabView(selection: $selection,
-                        content:  {
-                    ToggleBlockView()
-                        .tag(SelectionType.toggle)
-                    ExperienceView()
-                        .tag(SelectionType.expirience)
+                Toggle(isOn: $onboardingViewModel.youtubeAds,
+                       label: {
+                    Label(
+                        title: { BaseText(text: Texts.youtube_ads) },
+                        icon: { Image(systemName: "square.fill") }
+                    )
                 })
-                .tabViewStyle(.page)
-                Spacer()
-                ZStack {
-                    Button(action: {
-                        withAnimation(.easeInOut(duration: 0.2), {
-                            progress = 1.0
-                            selection = .expirience
-                        })
-                    }, label: {
-                        CustomText(text: Texts.continue_button,
-                                   font: .title2)
-                        .frame(maxWidth: .infinity)
-                    })
-                    .buttonStyle(OnboardingButtonStyle())
-                    NavigationLink {
-                        CommentsView()
-                    } label: {
-                        CustomText(text: Texts.continue_button,
-                                   font: .title2)
-                        .frame(maxWidth: .infinity)
-                    }
-                    .buttonStyle(OnboardingButtonStyle())
-                    .opacity(selection == .expirience ? 1.0 : 0.0)
-                }
+                
+                Toggle(isOn: $onboardingViewModel.popUpAds,
+                       label: {
+                    Label(
+                        title: { BaseText(text: Texts.pop_up_ads) },
+                        icon: { Image(systemName: "square.fill") }
+                    )
+                })
+                
+                Toggle(isOn: $onboardingViewModel.appAndWebTrackers,
+                       label: {
+                    Label(
+                        title: { BaseText(text: Texts.app_and_web_trackers) },
+                        icon: { Image(systemName: "square.fill") }
+                    )
+                })
+                
+                Toggle(isOn: $onboardingViewModel.cookieRequests,
+                       label: {
+                    Label(
+                        title: { BaseText(text: Texts.coockie_requests) },
+                        icon: { Image(systemName: "square.fill") }
+                    )
+                })
+                
+                Toggle(isOn: $onboardingViewModel.adultContent,
+                       label: {
+                    Label(
+                        title: { BaseText(text: Texts.adult_content) },
+                        icon: { Image(systemName: "square.fill") }
+                    )
+                })
             }
-            .onChange(of: selection) { _, newValue in
-                if newValue == SelectionType.expirience {
-                    withAnimation(.easeInOut(duration: 0.2), {
-                        progress = 1.0
-                    })
-                } else {
-                    withAnimation(.easeInOut(duration: 0.2), {
-                        progress = 0.5
-                    })
-                }
-            }
-            .padding()
+            .padding(.horizontal, 50)
+            Spacer()
         }
     }
 }

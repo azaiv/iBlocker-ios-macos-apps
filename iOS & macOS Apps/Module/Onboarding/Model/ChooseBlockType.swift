@@ -1,6 +1,6 @@
 import Foundation
 
-enum ChooseBlockType: CaseIterable {
+enum ChooseBlockType: CaseIterable, Equatable {
     case never
     case tried
     case already

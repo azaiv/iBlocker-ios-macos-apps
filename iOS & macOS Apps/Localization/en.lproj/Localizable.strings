@@ -48,3 +48,26 @@
 
 /* No comment provided by engineer. */
 "continue" = "Continue";
+
+/* No comment provided by engineer. */
+"comments view title" = "Great!";
+
+/* No comment provided by engineer. */
+"comments view description" = "We work hard to get you better services. See what people are saying about us. It may say more than our words";
+
+/* No comment provided by engineer. */
+"steps view title" = "Here is small steps to integrate Blocker's Rules";
+
+/* No comment provided by engineer. */
+"notifications view title" = "Let us help you have the latest version of the rules";
+
+/* No comment provided by engineer. */
+"notifications view description" = "Get the most out of valuable of the iBlocker app with reminders of the updating of the final version of the rules.";
+
+/* No comment provided by engineer. */
+"allow notification" = "Allow to receive notifications";
+
+/* No comment provided by engineer. */
+"notification continue" = "Yes, please";
+
+

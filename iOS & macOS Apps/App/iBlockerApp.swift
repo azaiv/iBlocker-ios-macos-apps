@@ -3,13 +3,14 @@ import SwiftUI
 @main
 struct iBlockerApp: App {
     
-    @State var onboardingViewModel = OnboardingViewModel()
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+    @AppStorage("showMenuBarExtra") private var showMenuBarExtra = true
+    @State private var onboardingViewModel = OnboardingViewModel()
     
     var body: some Scene {
         WindowGroup {
-            GetStartedView()
+            MainView()
                 .environmentObject(onboardingViewModel)
-                .tint(.blue)
         }
     }
 }

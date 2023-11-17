@@ -7,33 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		550B9D162B0377440055E9A5 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D152B0377440055E9A5 /* CustomText.swift */; };
+		55050AF92B04BAF200485BE2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55050AF82B04BAF200485BE2 /* Cocoa.framework */; };
+		55050AFC2B04BAF200485BE2 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 55050AFB2B04BAF200485BE2 /* blockerList.json */; };
+		55050AFE2B04BAF200485BE2 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55050AFD2B04BAF200485BE2 /* ContentBlockerRequestHandler.swift */; };
+		55050B092B04BCF800485BE2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55050B082B04BCF800485BE2 /* Constants.swift */; };
+		550B9D162B0377440055E9A5 /* BaseText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D152B0377440055E9A5 /* BaseText.swift */; };
 		550B9D182B037AE50055E9A5 /* ChooseBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D172B037AE50055E9A5 /* ChooseBlockView.swift */; };
 		550B9D1B2B0381DC0055E9A5 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D1A2B0381DC0055E9A5 /* OnboardingViewModel.swift */; };
-		550B9D1D2B0387D60055E9A5 /* ToggleBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D1C2B0387D60055E9A5 /* ToggleBlockView.swift */; };
-		550B9D1F2B038AF10055E9A5 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D1E2B038AF10055E9A5 /* ExperienceView.swift */; };
-		550B9D252B0390010055E9A5 /* OnboardingChooseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D242B0390010055E9A5 /* OnboardingChooseButton.swift */; };
 		550B9D2A2B039E760055E9A5 /* ChooseBlockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D292B039E760055E9A5 /* ChooseBlockType.swift */; };
-		550B9D322B03B7A90055E9A5 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D312B03B7A90055E9A5 /* CommentsView.swift */; };
-		550B9D342B03BA590055E9A5 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D332B03BA590055E9A5 /* CommentView.swift */; };
+		550B9D322B03B7A90055E9A5 /* ExpierenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B9D312B03B7A90055E9A5 /* ExpierenceView.swift */; };
+		554C05112B06069700A6ACA1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C05102B06069700A6ACA1 /* BaseView.swift */; };
+		554C05142B06295B00A6ACA1 /* BaseModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C05132B06295B00A6ACA1 /* BaseModalView.swift */; };
+		554C05162B06366D00A6ACA1 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C05152B06366D00A6ACA1 /* CommentsView.swift */; };
 		556344942B036D250070CD3E /* iBlockerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556344932B036D250070CD3E /* iBlockerApp.swift */; };
 		556344962B036D250070CD3E /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556344952B036D250070CD3E /* GetStartedView.swift */; };
 		556344982B036D260070CD3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556344972B036D260070CD3E /* Assets.xcassets */; };
 		556344AE2B036F970070CD3E /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556344AD2B036F970070CD3E /* Texts.swift */; };
 		556344B22B0370970070CD3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556344B42B0370970070CD3E /* Localizable.strings */; };
-		556344B82B0372500070CD3E /* OnboardingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556344B72B0372500070CD3E /* OnboardingButtonStyle.swift */; };
+		5569FC052B04FD8000B39A74 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569FC042B04FD8000B39A74 /* FiltersView.swift */; };
+		5569FC072B04FD8A00B39A74 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569FC062B04FD8A00B39A74 /* StatsView.swift */; };
+		5569FC092B04FDA400B39A74 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569FC082B04FDA400B39A74 /* SettingsView.swift */; };
+		5569FC0B2B04FE1200B39A74 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569FC0A2B04FE1200B39A74 /* HomeView.swift */; };
+		5569FC0D2B050E4300B39A74 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569FC0C2B050E4300B39A74 /* BaseButton.swift */; };
+		55AF56852B04CAC200B4B79E /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55050AFD2B04BAF200485BE2 /* ContentBlockerRequestHandler.swift */; };
+		55AF56872B04CDD100B4B79E /* StepsIntegrateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF56862B04CDD100B4B79E /* StepsIntegrateView.swift */; };
+		55AF56892B04D19500B4B79E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF56882B04D19500B4B79E /* NotificationView.swift */; };
+		55AF568B2B04DA6D00B4B79E /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF568A2B04DA6D00B4B79E /* PurchaseView.swift */; };
+		55AF568E2B04DB6600B4B79E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF568D2B04DB6600B4B79E /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		550B9D152B0377440055E9A5 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		55050AF62B04BAF200485BE2 /* contentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = contentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		55050AF82B04BAF200485BE2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		55050AFB2B04BAF200485BE2 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		55050AFD2B04BAF200485BE2 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		55050AFF2B04BAF200485BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55050B002B04BAF200485BE2 /* contentBlocker_extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = contentBlocker_extension.entitlements; sourceTree = "<group>"; };
+		55050B082B04BCF800485BE2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		550B9D152B0377440055E9A5 /* BaseText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseText.swift; sourceTree = "<group>"; };
 		550B9D172B037AE50055E9A5 /* ChooseBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBlockView.swift; sourceTree = "<group>"; };
 		550B9D1A2B0381DC0055E9A5 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
-		550B9D1C2B0387D60055E9A5 /* ToggleBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleBlockView.swift; sourceTree = "<group>"; };
-		550B9D1E2B038AF10055E9A5 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
-		550B9D242B0390010055E9A5 /* OnboardingChooseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingChooseButton.swift; sourceTree = "<group>"; };
 		550B9D292B039E760055E9A5 /* ChooseBlockType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBlockType.swift; sourceTree = "<group>"; };
-		550B9D312B03B7A90055E9A5 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
-		550B9D332B03BA590055E9A5 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		550B9D312B03B7A90055E9A5 /* ExpierenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpierenceView.swift; sourceTree = "<group>"; };
+		554C05102B06069700A6ACA1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		554C05132B06295B00A6ACA1 /* BaseModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModalView.swift; sourceTree = "<group>"; };
+		554C05152B06366D00A6ACA1 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		556344902B036D250070CD3E /* iBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		556344932B036D250070CD3E /* iBlockerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBlockerApp.swift; sourceTree = "<group>"; };
 		556344952B036D250070CD3E /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
@@ -42,10 +60,26 @@
 		556344AD2B036F970070CD3E /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		556344B32B0370970070CD3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		556344B52B0370990070CD3E /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		556344B72B0372500070CD3E /* OnboardingButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButtonStyle.swift; sourceTree = "<group>"; };
+		5569FC042B04FD8000B39A74 /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
+		5569FC062B04FD8A00B39A74 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		5569FC082B04FDA400B39A74 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5569FC0A2B04FE1200B39A74 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5569FC0C2B050E4300B39A74 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		55AF56862B04CDD100B4B79E /* StepsIntegrateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsIntegrateView.swift; sourceTree = "<group>"; };
+		55AF56882B04D19500B4B79E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		55AF568A2B04DA6D00B4B79E /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
+		55AF568D2B04DB6600B4B79E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		55050AF32B04BAF200485BE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55050AF92B04BAF200485BE2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5563448D2B036D250070CD3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,24 +90,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		550B9D132B03771C0055E9A5 /* Styles */ = {
+		55050AF72B04BAF200485BE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				556344B72B0372500070CD3E /* OnboardingButtonStyle.swift */,
+				55050AF82B04BAF200485BE2 /* Cocoa.framework */,
 			);
-			path = Styles;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		550B9D142B0377280055E9A5 /* View */ = {
+		55050AFA2B04BAF200485BE2 /* contentBlocker Extension */ = {
 			isa = PBXGroup;
 			children = (
-				550B9D152B0377440055E9A5 /* CustomText.swift */,
-				550B9D242B0390010055E9A5 /* OnboardingChooseButton.swift */,
-				550B9D1C2B0387D60055E9A5 /* ToggleBlockView.swift */,
-				550B9D1E2B038AF10055E9A5 /* ExperienceView.swift */,
-				550B9D332B03BA590055E9A5 /* CommentView.swift */,
+				55AF56822B04C9BA00B4B79E /* Request Handler */,
+				55AF56832B04C9C800B4B79E /* Data */,
+				55AF56842B04C9D100B4B79E /* Resources */,
 			);
-			path = View;
+			path = "contentBlocker Extension";
 			sourceTree = "<group>";
 		};
 		550B9D192B0381C80055E9A5 /* ViewModel */ = {
@@ -88,6 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				550B9D272B0396C30055E9A5 /* Onboarding */,
+				55AF568C2B04DB5600B4B79E /* Home */,
+				5569FC022B04FD6300B39A74 /* Filters */,
+				5569FC012B04FD5C00B39A74 /* Stats */,
+				5569FC032B04FD6C00B39A74 /* Settings */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -114,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				556344922B036D250070CD3E /* iOS & macOS Apps */,
+				55050AFA2B04BAF200485BE2 /* contentBlocker Extension */,
+				55050AF72B04BAF200485BE2 /* Frameworks */,
 				556344912B036D250070CD3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				556344902B036D250070CD3E /* iBlocker.app */,
+				55050AF62B04BAF200485BE2 /* contentBlocker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,7 +200,10 @@
 				556344B62B03723D0070CD3E /* Helpers */,
 				556344952B036D250070CD3E /* GetStartedView.swift */,
 				550B9D172B037AE50055E9A5 /* ChooseBlockView.swift */,
-				550B9D312B03B7A90055E9A5 /* CommentsView.swift */,
+				550B9D312B03B7A90055E9A5 /* ExpierenceView.swift */,
+				554C05152B06366D00A6ACA1 /* CommentsView.swift */,
+				55AF56862B04CDD100B4B79E /* StepsIntegrateView.swift */,
+				55AF56882B04D19500B4B79E /* NotificationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				556344AD2B036F970070CD3E /* Texts.swift */,
+				55050B082B04BCF800485BE2 /* Constants.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -185,15 +228,93 @@
 		556344B62B03723D0070CD3E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				550B9D142B0377280055E9A5 /* View */,
-				550B9D132B03771C0055E9A5 /* Styles */,
+				550B9D152B0377440055E9A5 /* BaseText.swift */,
+				5569FC0C2B050E4300B39A74 /* BaseButton.swift */,
+				554C05102B06069700A6ACA1 /* BaseView.swift */,
+				554C05132B06295B00A6ACA1 /* BaseModalView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5569FC012B04FD5C00B39A74 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				5569FC062B04FD8A00B39A74 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		5569FC022B04FD6300B39A74 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				5569FC042B04FD8000B39A74 /* FiltersView.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		5569FC032B04FD6C00B39A74 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5569FC082B04FDA400B39A74 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		55AF56822B04C9BA00B4B79E /* Request Handler */ = {
+			isa = PBXGroup;
+			children = (
+				55050AFD2B04BAF200485BE2 /* ContentBlockerRequestHandler.swift */,
+			);
+			path = "Request Handler";
+			sourceTree = "<group>";
+		};
+		55AF56832B04C9C800B4B79E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				55050AFB2B04BAF200485BE2 /* blockerList.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		55AF56842B04C9D100B4B79E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55050B002B04BAF200485BE2 /* contentBlocker_extension.entitlements */,
+				55050AFF2B04BAF200485BE2 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55AF568C2B04DB5600B4B79E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				55AF568A2B04DA6D00B4B79E /* PurchaseView.swift */,
+				5569FC0A2B04FE1200B39A74 /* HomeView.swift */,
+				55AF568D2B04DB6600B4B79E /* MainView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		55050AF52B04BAF200485BE2 /* contentBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55050B072B04BAF200485BE2 /* Build configuration list for PBXNativeTarget "contentBlocker" */;
+			buildPhases = (
+				55050AF22B04BAF200485BE2 /* Sources */,
+				55050AF32B04BAF200485BE2 /* Frameworks */,
+				55050AF42B04BAF200485BE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = contentBlocker;
+			productName = "contentBlocker-extension";
+			productReference = 55050AF62B04BAF200485BE2 /* contentBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5563448F2B036D250070CD3E /* iBlocker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5563449F2B036D260070CD3E /* Build configuration list for PBXNativeTarget "iBlocker" */;
@@ -221,6 +342,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					55050AF52B04BAF200485BE2 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					5563448F2B036D250070CD3E = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -241,11 +365,20 @@
 			projectRoot = "";
 			targets = (
 				5563448F2B036D250070CD3E /* iBlocker */,
+				55050AF52B04BAF200485BE2 /* contentBlocker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		55050AF42B04BAF200485BE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55050AFC2B04BAF200485BE2 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5563448E2B036D250070CD3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,23 +391,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		55050AF22B04BAF200485BE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55050AFE2B04BAF200485BE2 /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5563448C2B036D250070CD3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550B9D1D2B0387D60055E9A5 /* ToggleBlockView.swift in Sources */,
-				550B9D342B03BA590055E9A5 /* CommentView.swift in Sources */,
+				55AF56872B04CDD100B4B79E /* StepsIntegrateView.swift in Sources */,
+				55AF568B2B04DA6D00B4B79E /* PurchaseView.swift in Sources */,
+				5569FC052B04FD8000B39A74 /* FiltersView.swift in Sources */,
 				556344AE2B036F970070CD3E /* Texts.swift in Sources */,
-				550B9D322B03B7A90055E9A5 /* CommentsView.swift in Sources */,
+				550B9D322B03B7A90055E9A5 /* ExpierenceView.swift in Sources */,
 				556344962B036D250070CD3E /* GetStartedView.swift in Sources */,
-				550B9D1F2B038AF10055E9A5 /* ExperienceView.swift in Sources */,
-				556344B82B0372500070CD3E /* OnboardingButtonStyle.swift in Sources */,
+				55AF56892B04D19500B4B79E /* NotificationView.swift in Sources */,
+				55AF56852B04CAC200B4B79E /* ContentBlockerRequestHandler.swift in Sources */,
 				550B9D182B037AE50055E9A5 /* ChooseBlockView.swift in Sources */,
+				55AF568E2B04DB6600B4B79E /* MainView.swift in Sources */,
 				556344942B036D250070CD3E /* iBlockerApp.swift in Sources */,
 				550B9D1B2B0381DC0055E9A5 /* OnboardingViewModel.swift in Sources */,
-				550B9D162B0377440055E9A5 /* CustomText.swift in Sources */,
+				554C05112B06069700A6ACA1 /* BaseView.swift in Sources */,
+				554C05162B06366D00A6ACA1 /* CommentsView.swift in Sources */,
+				554C05142B06295B00A6ACA1 /* BaseModalView.swift in Sources */,
+				550B9D162B0377440055E9A5 /* BaseText.swift in Sources */,
+				55050B092B04BCF800485BE2 /* Constants.swift in Sources */,
 				550B9D2A2B039E760055E9A5 /* ChooseBlockType.swift in Sources */,
-				550B9D252B0390010055E9A5 /* OnboardingChooseButton.swift in Sources */,
+				5569FC0D2B050E4300B39A74 /* BaseButton.swift in Sources */,
+				5569FC072B04FD8A00B39A74 /* StatsView.swift in Sources */,
+				5569FC0B2B04FE1200B39A74 /* HomeView.swift in Sources */,
+				5569FC092B04FDA400B39A74 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +443,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		55050B052B04BAF200485BE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "contentBlocker Extension/Resources/contentBlocker_extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "contentBlocker Extension/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "contentBlocker-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aiv.iBlocker-ios-macos-apps.contentBlocker-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55050B062B04BAF200485BE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "contentBlocker Extension/Resources/contentBlocker_extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "contentBlocker Extension/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "contentBlocker-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aiv.iBlocker-ios-macos-apps.contentBlocker-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5563449D2B036D260070CD3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,7 +629,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS & macOS Apps/Resources/iBlocker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -434,12 +649,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "aiv.iBlocker-ios-macos-apps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,7 +667,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS & macOS Apps/Resources/iBlocker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -471,12 +687,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "aiv.iBlocker-ios-macos-apps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,6 +704,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		55050B072B04BAF200485BE2 /* Build configuration list for PBXNativeTarget "contentBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55050B052B04BAF200485BE2 /* Debug */,
+				55050B062B04BAF200485BE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5563448B2B036D250070CD3E /* Build configuration list for PBXProject "iBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

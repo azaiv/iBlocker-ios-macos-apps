@@ -10,4 +10,8 @@ class OnboardingViewModel: ObservableObject {
     @Published var cookieRequests = false
     @Published var adultContent = false
     
+    @Published var dismissOnboarding = false
+    
+    @Published var selection: ChooseBlockType.ID? = nil
+    
 }
