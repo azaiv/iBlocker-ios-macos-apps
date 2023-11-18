@@ -20,7 +20,7 @@ struct BaseButton: View {
                     }
                     .edgesIgnoringSafeArea(.bottom)
                     
-                    .frame(height: 100)
+                    .frame(height: 120)
                 
                 
                 Button(action: {
@@ -34,6 +34,7 @@ struct BaseButton: View {
                     .frame(maxWidth: 440)
                 })
                 .padding()
+                .padding(.top)
                 .buttonStyle(BaseButtonStyle())
             }
         }

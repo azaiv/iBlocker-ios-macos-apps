@@ -4,10 +4,9 @@ struct CommentsView: View {
     
     @EnvironmentObject var onboardingViewModel: OnboardingViewModel
     
-    @State private var isPresented = false
-    
     var body: some View {
         BaseModalView(content: {
+            
             BaseText(text: Texts.comments_view_title,
                      font: .largeTitle,
                      fontWeight: .bold)
@@ -24,13 +23,7 @@ struct CommentsView: View {
             setupView()
             setupView()
             setupView()
-            setupView()
-        }, action: {
-            isPresented = true
-        }, disabled: .constant(false))
-        .navigationDestination(isPresented: $isPresented) {
-            StepsIntegrateView()
-        }
+        })
     }
     
     @ViewBuilder
@@ -60,4 +53,5 @@ struct CommentsView: View {
 
 #Preview {
     CommentsView()
+        .environmentObject(OnboardingViewModel())
 }

@@ -4,17 +4,10 @@ struct ChooseBlockView: View {
     
     @EnvironmentObject var onboardingViewModel: OnboardingViewModel
     
-    @State private var isPresented = false
-
     var body: some View {
-            BaseModalView(content: {
-                setupView()
-            }, action: {
-                isPresented = true
-            }, disabled: .constant(false))
-            .navigationDestination(isPresented: $isPresented){
-                ExpierenceView()
-            }
+        BaseModalView(content: {
+            setupView()
+        })
     }
     
     @ViewBuilder
