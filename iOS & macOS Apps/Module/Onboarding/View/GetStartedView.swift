@@ -33,7 +33,6 @@ struct GetStartedView: View {
             .onAppear() {
                 router.destinationType = .getStarted
             }
-            
         }
         .overlay {
             BaseButton(action: {
@@ -70,4 +69,5 @@ struct GetStartedView: View {
 #Preview {
     GetStartedView()
         .environmentObject(OnboardingViewModel())
+        .environmentObject(Router())
 }

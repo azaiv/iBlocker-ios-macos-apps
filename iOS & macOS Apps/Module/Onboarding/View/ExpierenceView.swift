@@ -67,30 +67,7 @@ struct ExpierenceView: View {
                         onboardingViewModel.chooseBlockType = type
                     })
                 }
-//                .contentShape(Rectangle())
             }
-        
-//        Button(action: {
-//            withAnimation(.easeInOut(duration: 0.4), {
-//                onboardingViewModel.chooseBlockType = type
-//            })
-//        }, label: {
-//            HStack(alignment: .firstTextBaseline) {
-//                Image(systemName: type.image)
-//                    .foregroundColor(.orange)
-//                BaseText(text: type.title,
-//                         font: .subheadline,
-//                         alignment: .leading)
-//                .foregroundColor(onboardingViewModel.chooseBlockType?.title == type.title ? .white : .black)
-//            }
-//            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,
-//                   alignment: .leading)
-//            .padding()
-//            .contentShape(Rectangle())
-//        })
-//        .buttonStyle(.plain)
-//        .background(onboardingViewModel.chooseBlockType?.title == type.title ? .blue : .gray)
-//        .clipShape(RoundedRectangle(cornerRadius: 15, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
     }
 }
 

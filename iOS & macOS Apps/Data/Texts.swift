@@ -45,24 +45,36 @@ enum Texts {
         return NSLocalizedString("already use an ad blocker", comment: "")
     }
     
-    static var youtube_ads: String {
-        return NSLocalizedString("youtube ads", comment: "")
+    static var block_ads: String {
+        return NSLocalizedString("block ads", comment: "")
     }
     
-    static var pop_up_ads: String {
-        return NSLocalizedString("pop up ads", comment: "")
+    static var block_adult_sites: String {
+        return NSLocalizedString("block adult", comment: "")
     }
     
-    static var app_and_web_trackers: String {
-        return NSLocalizedString("app and web trackers", comment: "")
+    static var block_annoyances: String {
+        return NSLocalizedString("block annoyances", comment: "")
     }
     
-    static var coockie_requests: String {
-        return NSLocalizedString("coockie requests", comment: "")
+    static var block_comments: String {
+        return NSLocalizedString("block comments", comment: "")
     }
     
-    static var adult_content: String {
-        return NSLocalizedString("adult content", comment: "")
+    static var block_trackers: String {
+        return NSLocalizedString("block trackers", comment: "")
+    }
+    
+    static var block_widgets: String {
+        return NSLocalizedString("block widgets", comment: "")
+    }
+    
+    static var custom_rules: String {
+        return NSLocalizedString("custom rules", comment: "")
+    }
+    
+    static var regional_rules: String {
+        return NSLocalizedString("regional rules", comment: "")
     }
     
     static var continue_button: String {
@@ -96,4 +108,45 @@ enum Texts {
     static var notification_continue: String {
         return NSLocalizedString("notification continue", comment: "")
     }
+    
+    static var home_title: String {
+        return NSLocalizedString("home title", comment: "")
+    }
+    
+    static var filters_title: String {
+        return NSLocalizedString("filters title", comment: "")
+    }
+    
+    static var stats_title: String {
+        return NSLocalizedString("stats title", comment: "")
+    }
+    
+    static var settings_title: String {
+        return NSLocalizedString("settings title", comment: "")
+    }
+    
+    static var general_rules: String {
+        return NSLocalizedString("general rules", comment: "")
+    }
+    
+    static var alert_domain_block_title: String {
+        return NSLocalizedString("alert domain block title", comment: "")
+    }
+    
+    static var alert_domain_block_description: String {
+        return NSLocalizedString("alert domain block description", comment: "")
+    }
+    
+    static var cancel: String {
+        return NSLocalizedString("cancel", comment: "")
+    }
+    
+    static var filter_description: String {
+        return NSLocalizedString("filter description", comment: "")
+    }
+    
+    static var filter_navigation_title: String {
+        return NSLocalizedString("filters navigation title", comment: "")
+    }
+
 }

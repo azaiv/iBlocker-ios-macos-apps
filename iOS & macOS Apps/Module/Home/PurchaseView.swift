@@ -2,8 +2,6 @@ import SwiftUI
 
 struct PurchaseView: View {
     
-    @AppStorage("isOnboarding") var isOnboarding: Bool?
-    
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {

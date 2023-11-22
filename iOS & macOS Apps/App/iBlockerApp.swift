@@ -4,15 +4,17 @@ import SwiftUI
 struct iBlockerApp: App {
     
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
-    @AppStorage("showMenuBarExtra") private var showMenuBarExtra = true
     
-    @State private var isMenuPresented: Bool = false
-    @StateObject private var onboardingViewModel = OnboardingViewModel()
-    
+    @StateObject private var onbordingViewModel = OnboardingViewModel()
+    @StateObject private var blockerManager = BlockerManager()
+    @StateObject private var authenticate = Authenticate()
+
     var body: some Scene {
         WindowGroup {
-            MainView()
-                .environmentObject(onboardingViewModel)
+            MainView(isOnboarding: $isOnboarding)
+                .environmentObject(authenticate)
+                .environmentObject(onbordingViewModel)
+                .environmentObject(blockerManager)
         }
     }
 }

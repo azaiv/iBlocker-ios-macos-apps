@@ -3,7 +3,6 @@ import SwiftUI
 struct NotificationView: View {
     
     @EnvironmentObject var onboardingViewModel: OnboardingViewModel
-    @AppStorage("isOnboarding") var isOnboarding: Bool?
     
     var body: some View {
         BaseModalView(content: {

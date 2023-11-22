@@ -2,7 +2,10 @@ import SwiftUI
 
 struct StatsView: View {
     var body: some View {
-        Text("Stats")
+        NavigationStack {
+            Text("Stats")
+                .navigationTitle(Texts.stats_title)
+        }
     }
 }
 

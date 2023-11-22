@@ -14,19 +14,28 @@
 "choose block title second" = "What are your ad blocker apps experience?";
 
 /* No comment provided by engineer. */
-"youtube ads" = "Youtube Ads";
+"block ads" = "Block Ads";
 
 /* No comment provided by engineer. */
-"pop up ads" = "Pop-Up Ads";
+"block adult" = "Block Adult Sites";
 
 /* No comment provided by engineer. */
-"app and web trackers" = "App and Web trackers";
+"block annoyances" = "Block Annoyances";
 
 /* No comment provided by engineer. */
-"coockie requests" = "Coockie requests";
+"block comments" = "Block Comments";
 
 /* No comment provided by engineer. */
-"adult content" = "Adult content";
+"block Trackers" = "Block Trackers";
+
+/* No comment provided by engineer. */
+"block widgets" = "Block Widgets";
+
+/* No comment provided by engineer. */
+"custom rules" = "Custom Rules";
+
+/* No comment provided by engineer. */
+"regional rules" = "Regional Rules";
 
 /* No comment provided by engineer. */
 "experience first description" = "Excellent just try out the iBlocker and compare it with your current app for free.";
@@ -70,4 +79,36 @@
 /* No comment provided by engineer. */
 "notification continue" = "Yes, please";
 
+/* No comment provided by engineer. */
+"home title" = "Home";
+
+/* No comment provided by engineer. */
+"filters title" = "Filters";
+
+/* No comment provided by engineer. */
+"stats title" = "Stats";
+
+/* No comment provided by engineer. */
+"settings title" = "Settings";
+
+/* No comment provided by engineer. */
+"general rules" = "General rules";
+
+/* No comment provided by engineer. */
+"custom rules" = "Custom rules";
+
+/* No comment provided by engineer. */
+"alert domain block title" = "Block domain";
+
+/* No comment provided by engineer. */
+"alert domain block description" = "Add the domain you want to block";
+
+/* No comment provided by engineer. */
+"cancel" = "Cancel";
+
+/* No comment provided by engineer. */
+"filter description" = "The general rules will allow you to say goodbye buy all known types of ads. We update our rules database once a week.";
+
+/* No comment provided by engineer. */
+"filters navigation title" = "Safari Filters";
 
