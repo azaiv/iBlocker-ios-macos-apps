@@ -16,7 +16,8 @@ struct SettingsView: View {
                 Section {
                     ForEach(FirstSection.allCases, id: \.hashValue) { value in
                         NavigationLink(destination: {
-                            FirstSectionView(type: value)
+                            FirstSectionView(type: value, 
+                                             articles: nil)
                         }, label: {
                             Label(value.title, systemImage: value.image)
                         })

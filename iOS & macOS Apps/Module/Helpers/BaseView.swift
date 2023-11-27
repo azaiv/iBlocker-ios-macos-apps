@@ -9,22 +9,26 @@ struct BaseView: View {
     var body: some View {
         GeometryReader { frame in
             ScrollView {
-                Image(image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxHeight: frame.size.height / 2)
-                    .padding(70)
-                BaseText(text: title,
-                         font: .largeTitle,
-                         fontWeight: .bold,
-                         alignment: .center)
-                BaseText(text: description,
-                         font: .headline)
-                .multilineTextAlignment(.center)
-                .frame(alignment: .center)
-                .padding()
-                .padding()
-                .background(.clear)
+                VStack(alignment: .center) {
+                    BaseText(text: title,
+                             font: .largeTitle,
+                             fontWeight: .bold,
+                             alignment: .center)
+                    BaseText(text: description,
+                             font: .headline)
+                    .multilineTextAlignment(.center)
+                    .frame(alignment: .center)
+                    .padding()
+                    .padding()
+                    .background(.clear)
+                    Image(image)
+                        .resizable()
+                        .scaledToFit()
+                        .padding(.horizontal, 70)
+                }
+                .frame(maxWidth: 414)
+                .position(x: frame.size.width * 0.5,
+                          y: frame.size.height * 0.4)
             }
         }
     }

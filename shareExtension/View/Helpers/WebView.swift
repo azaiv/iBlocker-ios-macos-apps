@@ -36,7 +36,6 @@ struct WebView: UIViewRepresentable {
     }
     
     func updateUIView(_ webView: WKWebView, context: Context) {
-        
         let request = URLRequest(url: url)
         webView.load(request)
         
@@ -44,8 +43,9 @@ struct WebView: UIViewRepresentable {
         webView.isInspectable = true
         webView.allowsLinkPreview = false
         webView.navigationDelegate = context.coordinator
-        webView.configuration.userContentController.add(contentController, name: "myHandler")
+        webView.configuration.userContentController.add(contentController, name: "selectedItem")
     }
+
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         print(message.body)
@@ -96,15 +96,15 @@ struct WebView: UIViewRepresentable {
     class ContentController: NSObject, WKScriptMessageHandler {
         
         func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-            if message.name == "myHandler" {
+            if message.name == "selectedItem" {
                 let object = (message.body as? String)!
-//                if StorageManager.stmanager.objectsForRemove.contains(object) {
-//                    if let index = StorageManager.stmanager.objectsForRemove.firstIndex(where: { $0 == object}) {
-//                        StorageManager.stmanager.objectsForRemove.remove(at: index)
-//                    }
-//                } else {
-//                    StorageManager.stmanager.objectsForRemove.append(object)
-//                }
+                if BlockerManager.stmanager.objectsForRemove.contains(object) {
+                    if let index = BlockerManager.stmanager.objectsForRemove.firstIndex(where: { $0 == object}) {
+                        BlockerManager.stmanager.objectsForRemove.remove(at: index)
+                    }
+                } else {
+                    BlockerManager.stmanager.objectsForRemove.append(object)
+                }
             }
         }
     }

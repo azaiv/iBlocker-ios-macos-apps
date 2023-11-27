@@ -55,16 +55,10 @@ struct PurchaseView: View {
                     .padding(.top, 20)
                 
                 BaseText(text: "7 days free trial. Then 59.99$ / year")
-                
-                Button(action: {
+                BaseButton(action: {
                     
-                }, label: {
-                    BaseText(text: Texts.continue_button,
-                             font: .title3)
-                    .frame(height: 48)
-                    .frame(maxWidth: .infinity)
-                })
-                .buttonStyle(BaseButtonStyle())
+                }, title: Texts.continue_button,
+                           blur: false)
                 HStack {
                     Image(systemName: "checkmark")
                         .fontWeight(.bold)
@@ -162,6 +156,7 @@ struct PurchaseView: View {
                 }
                 
             }
+            .frame(maxWidth: 414)
             .padding()
         }
     }

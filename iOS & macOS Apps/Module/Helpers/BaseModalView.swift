@@ -8,9 +8,11 @@ struct BaseModalView<Content: View>: View {
         GeometryReader { frame in
             ScrollView(showsIndicators: false) {
                 content
-                    .padding()
+                    .padding(.horizontal, 20)
                     .padding(.bottom, 100)
+                    .frame(maxWidth: 414)
             }
+            .position(x: frame.frame(in: .local).midX, y:frame.frame(in: .local).midY)
         }
     }
 }

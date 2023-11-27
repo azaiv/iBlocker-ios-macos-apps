@@ -15,7 +15,12 @@ class BlockerManager: ObservableObject {
     @AppStorage(GeneralRules.comments.key) var blockComments: Bool = false
     @AppStorage(GeneralRules.trackers.key) var blockTrackers: Bool = false
     @AppStorage(GeneralRules.widgets.key) var blockWidgets: Bool = false
+    @AppStorage(GeneralRules.custom.key) var customRules: Bool = false
     
+    @Published var url: URL? = nil
+    @Published var objectsForRemove: [String] = []
+    
+    static let stmanager = BlockerManager()
     let sharedDefaults = UserDefaults(suiteName: "group.iblockertest")
     
     func reloadExtension(_ key: String) {
@@ -95,6 +100,41 @@ class BlockerManager: ObservableObject {
             }
         } else {
             return nil
+        }
+    }
+    
+    func deletejs(_ webSite: String, selector: String) {
+        
+        let userDefaults = UserDefaults(suiteName: "group.iblockertest")!
+        let path = userDefaults.string(forKey: "JSONFilePathKeyss")!
+        let url = URL(string: "file://\(path)")
+        
+        if FileManager.default.fileExists(atPath: url!.absoluteString) {
+            do {
+                let jsonData = try Data(contentsOf: url!)
+                
+                if var existingArray = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [[String: Any]] {
+                    let newItem: [String: Any] = [
+                        "action": ["type": "css-display-none", "selector": selector],
+                        "trigger": [
+                            "url-filter": "\(webSite).*"
+                        ]
+                    ]
+                    
+                    existingArray.append(newItem)
+                    
+                    let updatedJsonData = try JSONSerialization.data(withJSONObject: existingArray, options: .prettyPrinted)
+                    
+                    try updatedJsonData.write(to: url!)
+                    print("JSON файл успешно обновлен.")
+                } else {
+                    print("Ошибка при декодировании существующего JSON.")
+                }
+            } catch {
+                print("Ошибка: \(error.localizedDescription)")
+            }
+        } else {
+            print("JSON файл не существует. Создайте новый JSON файл.")
         }
     }
 }

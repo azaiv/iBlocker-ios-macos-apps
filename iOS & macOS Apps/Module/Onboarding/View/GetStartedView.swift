@@ -34,7 +34,7 @@ struct GetStartedView: View {
                 router.destinationType = .getStarted
             }
         }
-        .overlay {
+        .safeAreaInset(edge: .bottom) {
             BaseButton(action: {
                 switch router.destinationType {
                 case .getStarted:

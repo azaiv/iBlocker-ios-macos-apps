@@ -2,26 +2,34 @@ import SwiftUI
 
 struct PossibilitiesView: View {
     
-    let articleItem: PossibilitiesType
+    let test: Test
     
     var body: some View {
             BaseModalView(content: {
-                ForEach(articleItem.article, id: \.id) { item in
+                ForEach(0...test.image.count - 1, id: \.self) { index in
                     VStack(alignment: .leading) {
-                        Text(item.text)
-                        RoundedRectangle(cornerRadius: 25, 
-                                         style: .continuous)
-                            .fill(.secondary)
-                            .frame(height: 100)
-                        //                    Image(item.image)
+                        Text(test.texts[index])
+                        if test.image[index] != nil {
+                            AsyncImage(
+                                url: URL(string: test.image[index]!),
+                                content: { image in
+                                    image.resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(maxWidth: 300, maxHeight: 100)
+                                },
+                                placeholder: {
+                                    ProgressView()
+                                }
+                            )
+                        }
                     }
                 }
             })
-            .navigationTitle(articleItem.title)
+            .navigationTitle(test.title)
             .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    PossibilitiesView(articleItem: .hideElement)
+    PossibilitiesView(test: .init(title: "Title", texts: ["Text 1", "Text 2"], image: []))
 }

@@ -58,7 +58,7 @@ enum GeneralRules: CaseIterable {
         case .widgets:
             return "widgets"
         case .custom:
-            return ""
+            return "custom"
         }
     }
     

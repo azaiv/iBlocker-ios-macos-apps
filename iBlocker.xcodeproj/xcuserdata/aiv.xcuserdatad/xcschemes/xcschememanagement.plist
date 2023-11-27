@@ -4,6 +4,46 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Ads.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Adult.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Annoyances.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Coment.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Custom Rules.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Privacy Rules.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Trackers.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Widgets.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>blockAds.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -87,12 +127,62 @@
 		<key>shareExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>9</integer>
+		</dict>
+		<key>testshare.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>5506AB882B08DD44009FFFA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5563448F2B036D250070CD3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5581C9072B0E49270024B127</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55AAB5E72B08D4F9007516F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55AAB5F82B08D560007516F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55AAB6092B08D580007516F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55AAB61A2B08D59F007516F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55AAB62B2B08D5B1007516F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55AAB64D2B08D5D3007516F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55D326DD2B08D27D006F2700</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -5,6 +5,7 @@ struct ExpierenceView: View {
     @EnvironmentObject var onboardingViewModel: OnboardingViewModel
     
     @State private var selection: ChooseBlockType.ID? = nil
+    @State private var isActive: Bool = false
 
     var body: some View {
         GeometryReader { frame in
@@ -22,7 +23,7 @@ struct ExpierenceView: View {
     
     @ViewBuilder
     private func setupView() -> some View {
-        VStack {
+        VStack(spacing: 15) {
             ForEach(ChooseBlockType.allCases, id: \.id) { type in
                 expirienceButton(type)
             }
@@ -45,29 +46,13 @@ struct ExpierenceView: View {
     
     @ViewBuilder
     private func expirienceButton(_ type: ChooseBlockType) -> some View {
-        
-        RoundedRectangle(cornerRadius: 15, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
-            .fill(onboardingViewModel.chooseBlockType?.title == type.title ? .blue : .gray)
-            .frame(height: 50)
-            .overlay {
-                HStack(alignment: .firstTextBaseline) {
-                    Image(systemName: type.image)
-                        .foregroundColor(.orange)
-                    BaseText(text: type.title,
-                             font: .subheadline,
-                             alignment: .leading)
-                    .foregroundColor(onboardingViewModel.chooseBlockType?.title == type.title ? .white : .black)
-                }
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,
-                       alignment: .leading)
-                .padding()
-                .contentShape(Rectangle())
-                .onTapGesture {
-                    withAnimation(.easeInOut(duration: 0.4), {
-                        onboardingViewModel.chooseBlockType = type
-                    })
-                }
-            }
+        BaseToggleBlock(title: type.title, 
+                        checkbox: true,
+                        isActive: Binding(get: {
+            onboardingViewModel.chooseBlockType == type
+        }, set: { _, _ in
+            onboardingViewModel.chooseBlockType = type
+        }))
     }
 }
 

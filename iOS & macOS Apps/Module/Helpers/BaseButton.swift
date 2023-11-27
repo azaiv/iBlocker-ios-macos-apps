@@ -4,11 +4,14 @@ struct BaseButton: View {
     
     let action: () -> Void
     let title: String
+    var image: String? = nil
+    var blur: Bool = true
+    var color: Color? = nil
     
     var body: some View {
-        VStack {
-            Spacer()
-            ZStack {
+        
+        ZStack {
+            if blur {
                 Color.clear
                     .ignoresSafeArea()
                     .background(.ultraThinMaterial)
@@ -20,34 +23,36 @@ struct BaseButton: View {
                     }
                     .edgesIgnoringSafeArea(.bottom)
                     .frame(height: 120)
-                
-                Button(action: {
-                    action()
-                }, label: {
-                    BaseText(text: title,
-                             font: .title3,
-                             fontWeight: .semibold)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 48)
-                    .frame(maxWidth: 440)
-                })
-                .padding()
-                .padding(.top)
-                .buttonStyle(BaseButtonStyle())
             }
+            Button(action: {
+                action()
+            }, label: {
+                BaseText(text: title,
+                         font: .title3,
+                         image: image,
+                         fontWeight: .semibold)
+                .frame(maxWidth: 414)
+                .frame(height: 48)
+            })
+            .padding(.horizontal, 20)
+            .buttonStyle(BaseButtonStyle(color: color ?? .accentColor))
         }
     }
 }
 
 #Preview {
     BaseButton(action: { print("Action") },
-               title: "Title")
+               title: "Title",
+               color: .green)
 }
 
 struct BaseButtonStyle: ButtonStyle {
+    
+    let color: Color
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .background(Color.accentColor)
+            .background(color)
             .foregroundStyle(.white)
             .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
             .scaleEffect(configuration.isPressed ? 0.95 : 1)

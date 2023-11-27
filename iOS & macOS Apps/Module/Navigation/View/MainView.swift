@@ -22,15 +22,10 @@ struct MainView: View {
                 .tabItem {
                     Label(Tabs.home.title, systemImage: Tabs.home.image)
                 }
-            FiltersView()
-                .tag(Tabs.filters)
+            AdvancedView()
+                .tag(Tabs.advanced)
                 .tabItem {
-                    Label(Tabs.filters.title, systemImage: Tabs.filters.image)
-                }
-            StatsView()
-                .tag(Tabs.stats)
-                .tabItem {
-                    Label(Tabs.stats.title, systemImage: Tabs.stats.image)
+                    Label(Tabs.advanced.title, systemImage: Tabs.advanced.image)
                 }
             SettingsView()
                 .tag(Tabs.settings)
@@ -75,4 +70,5 @@ struct MainView: View {
 #Preview {
     MainView(isOnboarding: .constant(false))
         .environmentObject(OnboardingViewModel())
+        .environmentObject(Authenticate())
 }
